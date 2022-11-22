@@ -13,14 +13,5 @@ def get_number(input_string):
     except(ValueError):
         print('Ошибка ввода! Введите число число.')
         return get_number(input_string)
-
-def corent_10(num):
-    while num > 10:
-        num /  10
-    return num
-def corent_num(num):
-    if (num * 10) % 10 == 0:
-        print(f'У числа {num} нет дробной части!')
-
-
-corent_num(corent_10(get_number('dd')))
+total = get_number('Введите число: ')
+print(int(total * 10 % 10))
