@@ -3,3 +3,8 @@
 # *Примеры:*
 #
 # - 5 -> -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5
+def min_n_to_max_n(num):
+    for i in range(num * -1, num + 1):
+        print(i, end=' ')
+
+min_n_to_max_n(int(input('Введите число N: ')))
